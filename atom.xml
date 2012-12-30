@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[基巴斯坦]]></title>
+  <link href="http://theuniverse.github.com/atom.xml" rel="self"/>
+  <link href="http://theuniverse.github.com/"/>
+  <updated>2012-12-31T01:16:52+08:00</updated>
+  <id>http://theuniverse.github.com/</id>
+  <author>
+    <name><![CDATA[宇宙]]></name>
+    <email><![CDATA[blanchsi1990@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[hello octopress]]></title>
+    <link href="http://theuniverse.github.com/blog/2012/12/28/hello-octopress/"/>
+    <updated>2012-12-28T22:58:00+08:00</updated>
+    <id>http://theuniverse.github.com/blog/2012/12/28/hello-octopress</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
