@@ -64,7 +64,34 @@
 		
 	</div>
 </nav>
+<script language="javascript" type="application/javascript" src="http://jquery.offput.ca/js/jquery.timers.js" encode="utf-8"></script>
+<script language="javascript" type="application/javascript">
+	var loves;
+	var i = 0;
+	$.getJSON('http://pipes.yahoo.com/pipes/pipe.run?_id=bead1895a1c54faef1c59bbcf92578d8&_render=json&_callback=?', function(value){
+		loves = value.value.items;
+		$("#douban-content").fadeOut().html(loves[0].title).fadeIn();
+		$("#douban-content").everyTime(7000,'show', function(i) {
+			$(this).fadeOut().html(loves[1].title).fadeIn();
+			i += 1；
+			if（i == 10） i = 0；
+		});
+	});
+</script>
+<style>
+	#douban-broadcast{
+		position: absolute;
+		bottom: 30px;
+	}
 
+	#douban-content{
+		color: #eee;
+	}
+</style>
+<div id="douban-broadcast">
+	<span id="douban-content"></span>
+	<span id="douban-time"></span>
+</div>
 </header>				
 			</div>
 		</div>	
