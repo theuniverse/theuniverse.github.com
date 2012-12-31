@@ -71,7 +71,7 @@
 		var loves = value.value.items;
 		var love_index = 0;
 
-		$("#douban-content")html(loves[love_index].title).fadeIn();
+		$("#douban-content").html(loves[love_index].title).fadeIn();
 		$(document).everyTime(7000,'show', function(value) {
 			love_index += 1;
 			if(love_index == 10) love_index = 0;
